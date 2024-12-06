@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#f1c40f',
+                secondary: ''
+              }
+              
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <nav class="flex justify-between items-center px-10 bg-primary">
+        <div class="img-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSChHeGWUI6skOXdsRnXlosReyFOt3-YoRejA&s" alt="logo" class="w-10 h-10 rounded-full animate-bounce">
+        </div>
+        <ul class="flex">
+            <li class="inline-block p-6"><a href="" class="text-white hover:underline hover:font-bold">Home</a></li>
+            <li class="inline-block p-6"><a href=""  class="text-white hover:underline">Home</a></li>
+            <li class="inline-block p-6"><a href=""  class="text-white hover:underline">Home</a></li>
+            <li class="inline-block p-6"><a href=""  class="text-white hover:underline">Home</a></li>
+            <li class="inline-block p-6"><a href=""  class="text-white hover:underline">Home</a></li>
+        </ul>
+    </nav>
+    
+    <div class="flex flex-wrap justify-evenly items-center px-10 my-10">
+        <div class="w-[23%] h-[300px] bg-blue-400 hover:-translate-y-1"></div>
+        <div class="w-[23%] h-[300px] bg-blue-400"></div>
+        <div class="w-[23%] h-[300px] bg-blue-400"></div>
+        <div class="w-[23%] h-[300px] bg-blue-400"></div>
+    </div>
+</body>
+</html>
